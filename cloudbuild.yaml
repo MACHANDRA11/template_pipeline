@@ -5,8 +5,8 @@ steps:
   args: ['a.sh']
   env:
     - 'Name=chandra'
-  substitutions:
-    _NAME: v6.9.1 # default value
+  # substitutions:
+  #   _NAME: v6.9.1 # default value
 # steps:
 # - name: ubuntu
 #   entrypoint: bash
