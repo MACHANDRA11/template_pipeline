@@ -8,7 +8,7 @@ steps:
     chmod +x a.sh
     sh a.sh
   substitutions:
-    _Name: v6.9.1 # default value
+    _NAME: v6.9.1 # default value
 
 # steps:
 # - name: ubuntu
