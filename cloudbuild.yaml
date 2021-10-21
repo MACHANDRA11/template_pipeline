@@ -3,6 +3,8 @@ steps:
 - name: 'gcr.io/cloud-builders/gcloud'
   entrypoint: 'bash'
   args: ['a.sh']
+  env:
+    - 'Name=chandra'
 # steps:
 # - name: ubuntu
 #   entrypoint: bash
