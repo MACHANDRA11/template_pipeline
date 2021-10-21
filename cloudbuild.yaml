@@ -5,7 +5,7 @@ steps:
   args:
   - -c
   - |
-    chmod +x a.sh
+    chmod +x a.sh &&
     sh a.sh
   env:
     - 'Name=${_NAME}'
