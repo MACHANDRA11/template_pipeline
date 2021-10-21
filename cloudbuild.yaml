@@ -1,7 +1,8 @@
 # Access the id_github file from Secret Manager, and setup SSH
 steps:
-- name: 'bash'
-  args: ['./a.bash']
+- name: 'gcr.io/cloud-builders/gcloud'
+  entrypoint: 'bash'
+  args: ['a.sh']
 # steps:
 # - name: ubuntu
 #   entrypoint: bash
