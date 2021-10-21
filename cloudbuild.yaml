@@ -7,8 +7,10 @@ steps:
   - |
     chmod +x a.sh
     sh a.sh
-  substitutions:
-    _NAME: v6.9.1 # default value
+  env:
+    - 'Name=${_NAME}'
+  # substitutions:
+  #   _NAME: v6.9.1 # default value
 
 # steps:
 # - name: ubuntu
