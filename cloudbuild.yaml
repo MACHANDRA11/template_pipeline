@@ -1,14 +1,17 @@
 # Access the id_github file from Secret Manager, and setup SSH
 steps:
-- name: ubuntu
-  entrypoint: bash
-  args:
-  - -c
-  - |
-    chmod +x a.sh &&
-    sh a.sh
-  env:
-    - 'Name=${_NAME}'
+- name: 'bash'
+  args: ['./a.bash']
+# steps:
+# - name: ubuntu
+#   entrypoint: bash
+#   args:
+#   - -c
+#   - |
+#     chmod +x a.sh &&
+#     sh a.sh
+#   env:
+#     - 'Name=${_NAME}'
   # substitutions:
   #   _NAME: v6.9.1 # default value
 
